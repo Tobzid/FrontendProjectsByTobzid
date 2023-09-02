@@ -1,0 +1,47 @@
+.containerDiv{
+    width: 500px;
+    justify-content: center;
+align-items: center;
+}
+
+.titleDiv p{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-size: 110%;
+width: 350px;
+padding: 2%;
+border-radius: 5px;
+font-weight: bold;
+background-color: rgb(148, 173, 195);
+color: crimson;
+margin:4% auto;
+}
+
+.calcDiv{
+    margin: auto;
+    width: 40%;
+    padding: 2%;
+    background-color: aliceblue;
+}
+
+.calcDiv input{
+    width: 80%;
+    background-color: white;
+    padding: 2%;
+}
+
+.calcDiv button{
+    margin: 4%;
+    font-size: 150%;
+    color: crimson;
+    padding: 2%;
+    background-color: greenyellow;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.calcDiv button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}

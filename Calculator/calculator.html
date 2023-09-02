@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="all" type="text/css">
+</head>
+<body>
+    <div class="containerDiv"> <!--The containerDiv starts here-->
+        <div class="titleDiv">
+    <p>Calculator Built By Tobzid Adeleye</p>
+</div>
+
+<div class="calcDiv"> <!--The calculatorDiv ends here-->
+<form action=" " name="display">
+
+    <input class="value" type="text" name="txt" readonly="" >     
+</form>
+
+
+<button onclick="document.display.txt.value +='1'">1</button>
+<button onclick="document.display.txt.value +='2'">2</button>
+<button onclick="document.display.txt.value +='3'">3</button>
+<button onclick="document.display.txt.value +='+'">+</button>
+<br>
+
+<button onclick="document.display.txt.value +='4'">4</button>
+<button onclick="document.display.txt.value +='5'">5</button>
+<button onclick="document.display.txt.value +='6'">6</button>
+<button onclick="document.display.txt.value +='-'">-</button>
+<br>
+
+<button onclick="document.display.txt.value +='7'">7</button>
+<button onclick="document.display.txt.value +='8'">8</button>
+<button onclick="document.display.txt.value +='9'">9</button>
+<button onclick="document.display.txt.value +='*'">*</button>
+<br>
+
+<button onclick="document.display.txt.value +='0'">0</button>
+<button onclick="document.display.txt.value +='.'">.</button>
+<button onclick="document.display.txt.value = eval(display.txt.value)">=</button>
+<button onclick="document.display.txt.value +='/'">/</button>
+<br>
+<button onclick="document.display.txt.value =''">clear</button>
+</div> <!--The calculatorDiv ends here-->
+
+</div> <!--The containerDiv ends here-->
+
+<script>
+
+    
+</script>
+</body>
+</html>
