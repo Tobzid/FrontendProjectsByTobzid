@@ -11,3 +11,9 @@ function buttonReview(){
 }
 
 revealBtn.addEventListener('click', buttonReview);
+
+
+
+const Btn = document.querySelector('.Btn').addEventListener('click', function(e){
+    console.log(e.target.innerText = 'clicked!');
+},true);

@@ -43,3 +43,19 @@ h1{
 .hiddenBtn.revealBtn {
     display: block;
 }
+
+
+/* styling for 02-listen.html */
+.Div-2{
+    width: 1000px;
+    margin: 4% auto;
+}
+.Btn{
+    font-size: 30px;
+    color: crimson;
+    border-radius: 8px;
+    padding: 2%;
+    margin: auto;
+    border: 2px solid white;
+    background-color: rgb(93, 93, 199);
+}
