@@ -6,3 +6,5 @@
 5. Event Listner
 6. Quote Generator
 7. Stop Watch
+8. Javascript Quotes Generator
+9. Todo List
