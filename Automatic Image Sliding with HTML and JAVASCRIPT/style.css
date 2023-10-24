@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif, 'Nunito Sans', sans-serif, 'Public Sans', sans-serif, 'Ubuntu Mono', monospace;
+}
+
+body{
+    background:linear-gradient(to right, rgb(120, 188, 120), rgb(131, 131, 215), rgb(194, 120, 120)) ;
+    width: 100%;
+}
