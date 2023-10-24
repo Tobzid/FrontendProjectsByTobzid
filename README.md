@@ -5,8 +5,8 @@
 4. DOM work
 5. Getting the current time.
 6. Event Listner
-7. Creating a todo list
+7. Creating a Todo List
 8. Quote Generator
 9. Stop Watch
 10. Javascript Quotes Generator
-11. Todo List
+
