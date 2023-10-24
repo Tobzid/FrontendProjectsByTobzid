@@ -9,4 +9,5 @@
 8. Quote Generator
 9. Stop Watch
 10. Javascript Quotes Generator
+11. Displaying or sliding images with just HTML AND JAVASCRIPT
 
