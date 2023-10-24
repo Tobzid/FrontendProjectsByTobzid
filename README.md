@@ -2,9 +2,11 @@
 1. Adding to cart project
 2. Calculator Project
 3. Javascript Random Game.
-4. Getting the current time.
-5. Event Listner
-6. Quote Generator
-7. Stop Watch
-8. Javascript Quotes Generator
-9. Todo List
+4. DOM work
+5. Getting the current time.
+6. Event Listner
+7. Creating a todo list
+8. Quote Generator
+9. Stop Watch
+10. Javascript Quotes Generator
+11. Todo List
