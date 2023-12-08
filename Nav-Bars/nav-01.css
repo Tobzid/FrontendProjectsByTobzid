@@ -1,0 +1,1492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif, 'Nunito Sans', sans-serif, 'Public Sans', sans-serif, 'Ubuntu Mono', monospace;
+}
+
+body{
+    background:linear-gradient(to right, rgb(120, 188, 120), rgb(131, 131, 215), rgb(194, 120, 120)) ;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 0.5%;
+}
+
+.nav-check{
+    display: none;
+}
+
+.nav-check-Two{
+    display: none;
+}
+
+.logo-Div{
+    color: goldenrod;
+}
+.NavBar ul{
+    list-style: none;
+    display: flex;   
+    
+}
+
+.NavBar li{
+    font-size: 20px;   
+    padding: 10px;
+}
+
+.NavBar a{
+    text-decoration: none;
+    font: 20px;
+    color: red;
+}
+
+/* The nav styling starts here */
+.home-tag, .about-tag, .academics-tag, .contactUs-tag, .onlineTools-tag, .give-tag{
+    position: relative;
+    cursor: pointer;
+}
+
+.Home, .About-us, .Academics, .Contact-Us, .Online-tools, .Give{
+    position: absolute;
+    top: 50px; 
+    left: 5px;
+    padding: 6% ;
+    margin: 2%;
+    width: 200px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    background-color:white;
+}
+
+.Home a, .About-us a, .Academics a, .Contact-Us a, .Online-tools a{
+    font-size: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.Give a{
+    font-size: 17px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-tag:hover, .about-tag:hover, .academics-tag:hover, .onlineTools-tag:hover,
+.contactUs-tag:hover, .give-tag:hover{
+    text-decoration: overline;
+    transition: 0.3s;
+    color: antiquewhite;
+}
+
+.home-tag:hover .Home{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    /*background-color: black;*/
+    display: block;
+    width: 300%;
+  
+}
+
+.about-tag:hover .About-us, .academics-tag:hover .Academics,
+ .onlineTools-tag:hover .Online-tools {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    /*background-color: black;*/
+    display: block;
+    width: 180%;    
+}
+
+.contactUs-tag:hover .Contact-Us{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    background-color: black;
+    display: block;
+    width: 100%;
+}
+
+.give-tag:hover .Give{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    /*background-color: black;*/
+    display: block;
+    width: 300%;
+}
+
+/* The styling of the first section starts here */
+.firstSectionDiv{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    padding: 2%;
+    margin: auto;
+    animation: slide_animation 33s infinite;
+}
+
+.firstSectionDiv img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.BtnOne{
+    text-align: center;
+    margin-top: 2%;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+}
+
+.BtnOne button{
+    font-size: 20px;
+    padding: 10px;
+    color: wheat;
+    z-index: 1;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+
+/* The styling for the second section starts here */
+.contDivInSectTwo{
+    display: flex;
+    padding: 30px;
+}
+
+.sectTwoDivOne, .sectTwoDivTwo{
+    width: 50%;
+    margin: 10px;
+}
+
+.sectTwoDivOne h1, .sectTwoDivTwo h1{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.sectTwoDivOne p, .sectTwoDivTwo p{
+    font-size: 18px;
+    color: black;
+}
+
+.sectTwoDivOne button{
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 22px;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+
+.planDiv{
+    display: flex; 
+}
+
+.planOne, .planThree{
+ margin: 10px  20px 10px 0;
+ }
+.planTwo, .planFour{
+    margin: 10px 20px;
+}
+
+.planOne a, .planThree a, .planTwo a, .planFour a{
+    display: block;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    }
+
+#spanOne a, #spanTwo a, #spanThree a, #spanFour a, #spanFive a, #spanSix a, #spanSeven a, #spanEight a, #spanNine a,
+#spanTen a, #spanElev a, #spanTwelve a{
+    position: relative;
+}
+
+#spanOne a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+#spanOne a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+
+#spanTwo a:before{
+    content: '';
+    position: absolute;
+    width: 33%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+#spanTwo a:hover:before{
+    width: 25%;
+    height: 4px;
+}
+
+#spanThree a:before{
+    content: ' ';
+    position: absolute;
+    width: 54%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+#spanThree a:hover:before{
+    width: 45%;
+    height: 4px;
+}
+
+#spanFour a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+#spanFour a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+
+#spanFive a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+#spanFive a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+#spanSix a:before{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+#spanSix a:hover:before{
+    width: 60%;
+    height: 4px;
+}
+
+ #spanSeven a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+ }
+ #spanSeven a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+ 
+ #spanEight a:before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+ } 
+ #spanEight a:hover:before{
+    width: 30%;
+    height: 4px;
+}
+
+
+ #spanNine a:before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+ }
+ #spanNine a:hover:before{
+    width: 40%;
+    height: 4px;
+}
+
+ #spanTen a:before{
+    content: '';
+    position: absolute;
+    width: 72%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+ }
+ #spanTen a:hover:before{
+    width: 62%;
+    height: 4px;
+}
+
+  #spanElev a:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+ }
+ #spanElev a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+
+  #spanTwelve a:before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    transition: 0.3s ease;
+  }
+
+  #spanTwelve a:hover:before{
+    width: 65%;
+    height: 4px;
+} 
+
+/* The styling for the second section ends here */
+.thirdSect{
+    width: 100%;
+    background-color: rgb(48, 92, 48);
+    padding: 40px;
+}
+
+
+.thirdSect input{
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.afterSearchContDiv{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 50%;
+    margin: auto;
+}
+
+.gatewayThree, .gatewayTwo, .gateway{
+    margin: 15px 15px 10px 0;
+}
+
+.gatewayThree a, .gatewayTwo a{
+    display: block;
+    text-decoration: none;
+    
+    font-size: 18px;
+    color: white;
+}
+
+#alumniOne , #alumniTwo , #alumniThree , #alumniFour , #alumniFive {
+    position: relative;
+}
+#alumniOne:before, #alumniTwo a:before, #alumniFour a:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+#alumniOne:hover:before, #alumniTwo a:hover:before, #alumniFour a:hover:before{
+    width: 80%;
+    height: 4px;
+}
+
+#alumniThree a:before{
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+#alumniThree a:hover:before{
+    width: 40%;
+    height: 4px;
+}
+
+#alumniFive a:before{
+    content: '';
+    width: 35%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+#alumniFive a:hover:before{
+    width: 25%;
+    height: 4px;
+}
+/* The styling for the second section ends here */
+.sectFour{
+    background-color: white;
+    width: 100%;
+    font-family: 'Fjalla One', sans-serif, 'Kanit', sans-serif, 'Nunito Sans', sans-serif, 'Public Sans', sans-serif, 'Roboto', sans-serif, 'Ubuntu Mono', monospace;;
+    padding: 5%;
+}
+
+.newsDivInSectFour{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstRead{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    border:2px solid black ;
+    padding: 1px;
+}
+
+.firstRead a{
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.firstRead:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    animation: border-top 1s infinite;
+    border-top:2px solid rgb(48, 92, 48);
+}
+
+@keyframes border-top {
+    0%{width: 0px; height: 0px;}
+    100%{width: 200px; height: 50px;}
+}
+
+.ReadImages, .ReadImagesTwo{
+    display: flex;
+    padding-top: 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ReadBox{
+    width: 23%;
+    height: 450px;
+    background-color: rgb(48, 92, 48);
+}
+
+.ReadBox img{
+    width: 100%;
+    height: 200px;
+}
+
+.ReadBox p{
+    font-size: 15px;
+    padding: 4%;
+    color: white;
+}
+
+.ReadBox h4{
+    font-size: 18px;
+    padding: 4%;
+    color: white;
+}
+
+.ReadBox a{
+    color: white;
+    padding: 4%;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* The fourth section starts here */
+
+.sectFive{
+    width: 100%;
+    padding: 5%;
+}
+
+.ContEventDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.EventDiv{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    border: 3px solid rgb(48, 92, 48);
+    padding: 3%;
+    margin: 0 5% 2% 0;
+    text-align: center;
+}
+
+.EventDiv a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.EventDiv a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* The sixth section starts here */
+.sectSix{
+    background-image: url('images/church.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-color: rgb(48, 92, 48);
+    background-blend-mode: luminosity;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    animation: moveimage 2s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes moveimage {
+    from {opacity: 0%; width: 0%;}
+    to{opacity: 100%; width: 100%;}
+}
+
+.theDivInSectSix{
+    width: 55%;
+    margin: auto;
+}
+
+.theDivInSectSix h2{
+    font-size: 35px;
+}
+
+.theDivInSectSix p{
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.firstReadOne{
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    border:3px solid black ;
+    padding: 1px;
+    margin-top: 3%;
+}
+
+.firstReadOne a{
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.firstReadOne:before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    animation: border-topp 1s infinite;
+    border-top:3px solid rgb(48, 92, 48);
+}
+
+@keyframes border-topp {
+    0%{width: 0px; height: 0px;}
+    100%{width: 350px; height: 50px;}
+}
+
+/* The seventh section starts here */
+.sectSeven{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.sociaMedia{
+    width: 40%;
+    height: 200px;
+    background-color: rgb(48, 92, 48);
+    margin: auto;
+    padding-top: 3%;
+}
+.sociaMedia h1{
+    font-size: 22px;
+    
+    text-align: center;
+}
+
+.socialMediaImage{
+    width: 40%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.socialMediaImage img:hover{
+    transform: scale(1.3);
+}
+
+.socialMediaImage img{
+    height: 20px;
+    transition: 0.5s ease;
+}
+
+/* The footer Div Starts from here */
+.footerCont{
+    background-color:rgb(48, 92, 48);
+}
+
+.footerCont p{
+    color: white;
+}
+
+.footerCont a{
+    color: white;
+}
+
+.footersocialMedia{
+    width: 15%;
+}
+
+.footersocialMedia img{
+    height: 20px;
+    padding: 0 2%;
+    transition: 0.4s ease;
+}
+
+.footersocialMedia img:hover{
+    transform: scale(1.3);
+}
+
+.footerCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1% 2%;
+    border-top: 1px solid crimson;
+}
+
+.footerDivOne{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+/* Media Querry starts here */
+
+
+
+
+
+@media screen and (max-width: 430px) and (min-width: 280px){
+    .NavBar{
+        display: none;
+    }
+
+    .nav-check{
+        display: block;
+        color: white;
+        font-size: 45px;
+    }
+
+    .firstSectionDiv{
+        height: 280px;
+    }
+
+    .BtnOne{
+        top: 30%;
+    }
+
+    .contDivInSectTwo{
+        flex-wrap: wrap;
+    }
+    
+    .sectTwoDivOne, .sectTwoDivTwo{
+        width: 95%;
+        margin: 10px;
+        
+    }
+
+    .sectTwoDivOne h1, .sectTwoDivTwo h1{
+        font-size: 40px;
+    }
+
+    .sectTwoDivOne P, .sectTwoDivTwo p{
+        font-size: 25PX;
+        
+    }
+
+    .sectTwoDivOne button{
+        font-size: 25px;
+        font-size: bold;
+    }
+
+    .planDiv{
+        flex-wrap: wrap;
+    }
+
+    .planTwo, .planFour, .planOne, .planThree{
+        margin: 5px 0;
+        width: 100%;
+        }
+
+        .planOne a, .planThree a{
+            font-size: 25px;
+        }
+
+       .planTwo a, .planFour a{ 
+        font-size: 25px;
+       }
+       
+       #spanOne a:before{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    
+    #spanOne a:hover:before{
+        width: 50%;
+        height: 4px;
+    }
+    
+    #spanTwo a:before{
+        content: '';
+        position: absolute;
+        width: 25%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+
+    #spanTwo a:hover:before{
+        width: 20%;
+        height: 4px;
+    }
+    
+    #spanThree a:before{
+        content: ' ';
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanThree a:hover:before{
+        width: 35%;
+        height: 4px;
+    }
+    
+    #spanFour a:before{
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanFour a:hover:before{
+        width: 32%;
+        height: 4px;
+    }
+    
+    #spanFive a:before{
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanFive a:hover:before{
+        width: 32%;
+        height: 4px;
+    }
+    #spanSix a:before{
+        content: '';
+        position: absolute;
+        width: 58%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanSix a:hover:before{
+        width: 45%;
+        height: 4px;
+    }
+    
+     #spanSeven a:before{
+        content: '';
+        position: absolute;
+        width: 78%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanSeven a:hover:before{
+        width: 60%;
+        height: 4px;
+    }
+     
+     #spanEight a:before{
+        content: '';
+        position: absolute;
+        width: 35%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     } 
+     #spanEight a:hover:before{
+        width: 28%;
+        height: 4px;
+    }
+    
+    
+     #spanNine a:before{
+        content: '';
+        position: absolute;
+        width: 43%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanNine a:hover:before{
+        width: 34%;
+        height: 4px;
+    }
+    
+     #spanTen a:before{
+        content: '';
+        position: absolute;
+        width: 45%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanTen a:hover:before{
+        width: 38%;
+        height: 4px;
+    }
+    
+      #spanElev a:before{
+        content: '';
+        position: absolute;
+        width: 53%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanElev a:hover:before{
+        width: 45%;
+        height: 4px;
+    }
+    
+      #spanTwelve a:before{
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+      }
+    
+      #spanTwelve a:hover:before{
+        width: 32%;
+        height: 4px;
+    } 
+    
+    .thirdSect input{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .afterSearchContDiv{
+        width: 100%;
+    }
+
+    .afterSearchContDiv a{
+        margin-bottom: 10px;
+        font-size: 18.5px;
+    }
+    .gateway{
+        display: none;
+    }
+    .gatewayTwo{
+        width: 50%;
+    }
+    
+#alumniOne:before, #alumniTwo a:before, #alumniFour a:before{
+    content: '';
+    width: 88%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+
+#alumniOne:hover:before, #alumniTwo a:hover:before{
+    width: 78%;
+    height: 4px;
+}
+
+#alumniFour a:before{
+    content: '';
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+
+#alumniFour a:hover:before{
+    width: 30%;
+    height: 4px;
+}
+
+#alumniThree a:before{
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+#alumniThree a:hover:before{
+    width: 40%;
+    height: 4px;
+}
+
+#alumniFive a:before{
+    content: '';
+    width: 35%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: yellow;
+    transition: 0.3s ease;
+}
+#alumniFive a:hover:before{
+    width: 25%;
+    height: 4px;
+}
+
+.ReadImages, .ReadImagesTwo{
+ flex-direction: column;
+}
+
+.ReadBox{
+    width: 100%;
+    height: 490px;
+    background-color: rgb(48, 92, 48);
+}
+
+.ReadBox p{
+    font-size: 22px;
+    padding: 4%;
+    color: white;
+}
+
+.ReadBox h4{
+    font-size: 25px;
+    padding: 4%;
+    color: white;
+}
+
+.ReadBox a{
+    font-size: 20px;
+}
+
+.ContEventDiv{
+ flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.EventDiv{
+    width: 50%;
+    height:  180px;
+}
+
+.EventDiv a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.sectSix{
+    width: 100%;
+    height: 300px;
+}
+
+.theDivInSectSix{
+    width: 55%;
+    margin: auto;
+}
+
+.theDivInSectSix h2{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.theDivInSectSix p{
+    display: none;
+}
+
+.firstReadOne{
+   display: none;
+}
+
+.sectSeven{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.sociaMedia{
+    width: 75%;
+    height: 200px;
+    border-radius: 0 20px 0 20px;
+}
+.sociaMedia h1{
+    font-size: 25px;
+    }
+
+.socialMediaImage{
+    width: 65%;
+    padding-top: 60px;
+}
+
+.socialMediaImage img{
+    height: 25px;
+    transition: 0.5s ease;
+}
+
+.footerLogo{
+    padding: 30% 20px 0 10px;
+}
+
+.footersocialMedia{
+    display: flex;
+    flex-direction: column;
+}
+
+.footersocialMedia img{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:750px ) and (max-width:900px) {
+    
+    .BtnOne{
+        top: 52%;
+    }
+
+    .NavBar{
+        display: none;
+    }
+
+    .nav-check{
+        display: block;
+        color: white;
+        font-size: 45px;
+    }
+
+    
+    .sectTwoDivOne h1, .sectTwoDivTwo h1{
+        font-size: 40px;
+    }
+
+    .sectTwoDivOne h1, .sectTwoDivTwo h1{
+        font-size: 40px;
+    }
+
+    .sectTwoDivOne P, .sectTwoDivTwo p{
+        font-size: 25PX;
+        
+    }
+
+    .sectTwoDivOne button{
+        font-size: 25px;
+        font-size: bold;
+    }
+
+    .planOne, .planThree{
+        margin: 10px  3px 10px 0;
+        }
+       .planTwo, .planFour{
+           margin: 10px 3px;
+       }
+    
+       .planTwo, .planFour, .planOne, .planThree{
+        margin: 5px 0;
+        width: 100%;
+        }
+
+        .planOne a, .planThree a{
+            font-size: 25px;
+        }
+
+       .planTwo a, .planFour a{ 
+        font-size: 25px;
+       }
+       
+       #spanOne a:before{
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    
+    #spanOne a:hover:before{
+        width: 50%;
+        height: 4px;
+    }
+    
+    #spanTwo a:before{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+
+    #spanTwo a:hover:before{
+        width: 30%;
+        height: 4px;
+    }
+    
+    #spanThree a:before{
+        content: ' ';
+        position: absolute;
+        width: 72%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanThree a:hover:before{
+        width: 55%;
+        height: 4px;
+    }
+    
+    #spanFour a:before{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanFour a:hover:before{
+        width: 60%;
+        height: 4px;
+    }
+    
+    #spanFive a:before{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanFive a:hover:before{
+        width: 64%;
+        height: 4px;
+    }
+    #spanSix a:before{
+        content: '';
+        position: absolute;
+        width: 58%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+    }
+    #spanSix a:hover:before{
+        width: 45%;
+        height: 4px;
+    }
+    
+     #spanSeven a:before{
+        content: '';
+        position: absolute;
+        width: 78%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanSeven a:hover:before{
+        width: 60%;
+        height: 4px;
+    }
+     
+     #spanEight a:before{
+        content: '';
+        position: absolute;
+        width: 65%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     } 
+     #spanEight a:hover:before{
+        width: 45%;
+        height: 4px;
+    }
+    
+    
+     #spanNine a:before{
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanNine a:hover:before{
+        width: 68%;
+        height: 4px;
+    }
+    
+     #spanTen a:before{
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanTen a:hover:before{
+        width: 60%;
+        height: 4px;
+    }
+    
+      #spanElev a:before{
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+     }
+     #spanElev a:hover:before{
+        width: 50%;
+        height: 4px;
+    }
+    
+      #spanTwelve a:before{
+        content: '';
+        position: absolute;
+        width: 78%;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        transition: 0.3s ease;
+      }
+    
+      #spanTwelve a:hover:before{
+        width: 65%;
+        height: 4px;
+    } 
+    
+    .thirdSect input{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .afterSearchContDiv{
+        width: 100%;
+    }
+
+    .thirdSect input{
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .afterSearchContDiv{
+        width: 100%;
+    }
+
+    .afterSearchContDiv a{
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .gateway{
+        display: 30%;
+    }
+    .gatewayTwo{
+        width: 30%;
+    }
+    
+    #alumniOne:before, #alumniTwo a:before, #alumniFour a:before{
+        content: '';
+        width: 80%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background: yellow;
+        transition: 0.3s ease;
+    }
+    
+    #alumniOne:hover:before, #alumniTwo a:hover:before{
+        width: 70%;
+        height: 4px;
+    }
+    
+    #alumniFour a:before{
+        content: '';
+        width: 40%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background: yellow;
+        transition: 0.3s ease;
+    }
+    
+    #alumniFour a:hover:before{
+        width: 30%;
+        height: 4px;
+    }
+    
+    #alumniThree a:before{
+        content: '';
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background: yellow;
+        transition: 0.3s ease;
+    }
+    #alumniThree a:hover:before{
+        width: 40%;
+        height: 4px;
+    }
+    
+    #alumniFive a:before{
+        content: '';
+        width: 35%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background: yellow;
+        transition: 0.3s ease;
+    }
+    #alumniFive a:hover:before{
+        width: 25%;
+        height: 4px;
+    }
+    
+    
+    
+}
+
+
+
