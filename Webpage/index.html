@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar with Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito+Sans:opsz,wght@6..12,200&family=Public+Sans&family=Roboto&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="all" type="text/css">
+</head>
+<body>
+
+<header>
+<div class="container"> <!--The Big Container start here-->
+<div class="logo-Div">
+<h1>ToBZid</h1>
+</div>
+
+<nav class="NavBar">
+
+    <ul>
+<li class="home-tag">
+    <a  href="">Home</a>
+
+    <div class="Home">
+        <a href="">Tobzid Margazine</a>
+        <a href="">Campus Map</a>
+        <a href="">Senior Administrator</a>
+        <a href="">Social Media</a>
+        <a href="">Facts and Figures</a> 
+    </div>
+    
+</li>    
+
+<li class="about-tag">
+    <a  href="">About Us</a>
+    
+<div class="About-us">
+    <a href="">All Social Media</a>
+    <a href="">Podcast</a>
+    <a href="">Webiner</a>
+    <a href="">Strategy</a>
+    <a href="">Content</a> 
+</div>
+
+</li>
+
+<li class="academics-tag">
+    <a  href="">Academics</a>
+
+    <div class="Academics">
+        <a href="">School of Education</a>
+        <a href="">Research</a>
+        <a href="">List of Majors</a>
+        <a href="">School of Business</a>
+        <a href="">Graduate School</a> 
+    </div>
+    
+</li>
+
+<li class="contactUs-tag">
+    <a  href="">Contact Us</a>
+
+    <div class="Contact-Us">
+    <a href="">Facebook</a>
+    <a href="">Youtube</a>
+    <a href="">Twitter</a>
+    <a href="">TikTok</a>
+    <a href="">Linked In</a> 
+</div>
+</li>
+
+<li class="onlineTools-tag">
+    <a  href="">Online Tools</a>
+
+    <div class="Online-tools">
+        <a href="">System Status</a>
+        <a href="">Canvass</a>
+        <a href="">BearWeb</a>
+        <a href="">Email/Out look web access</a>
+        <a href="">Univerity Advertisement</a> 
+    </div>
+</li>
+
+<li class="give-tag">
+    <a  href="">Give</a>
+<div class="Give">
+    <a href="">Gift and Estate Planning</a>
+    <a href="">President's Excellence Funds</a>
+    <a href="">Give: Campaign for Tobzid</a>
+    <a href="">Some of the School activities</a>
+    <a href="">Univerity Advertisement</a> 
+</div>
+</li>
+
+<li>
+    <a class="student-life" href="">Student Life</a>
+</li>
+</ul> 
+</nav>
+
+<div class="nav-check">
+<div class="nav-check-One">&#43;</div>
+<div class="nav-check-Two">&#215;</div>
+</div>
+
+</div> <!--The Big Container ends here-->
+</header>
+<main>
+<section>
+
+<div class="firstSectionDiv"> <!--The container DIV starts here-->
+
+    <div class="imageSlides"> <!--The imageSlides starts here-->
+        <div>
+    <img class="slide" name="change" src="images/prof1.avif" alt="first-image" >
+</div>
+
+<!--
+<div>
+    <img class="slide" name="change" src="images/students-play-sports3.jpg" alt="third image">
+    <img class="slide" name="change" src="images/prof2.jpg" alt="second image">
+    <img class="slide" name="change" src="images/studentsport1.jpg" alt="fourth image">
+    <img class="slide" name="change" src="images/disctrict.jpg" alt="fifth image">
+</div>
+-->
+</div> <!--The imageSlides ends here-->
+</div> <!--The container DIV ends here-->
+
+<div class="BtnOne">
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+</div>
+</section> <!-- The first section ends here-->
+
+<section>
+    <div class="contDivInSectTwo"> <!--The container in sect two starts here-->
+
+<div class="sectTwoDivOne"> <!--This mini Div starts here-->
+
+<h1>Undergraduate Education</h1>
+<p>Tobzid's dedication to excellence and diverse range of academic programs provide students with the advantages of a 
+    large university's rich tradition and growth opportunities,
+     combined with the intimate and close-knit community experience typically found in smaller institutions.</p>
+
+     <button>UNDERGRADUATE ADMISSIONS</button>
+
+     <div class="planDiv"> <!--The Plan Div starts here-->
+     <div class="planOne">
+        <span id="spanOne">
+        <a href="">Affordability Planner</a>
+    </span>
+    <span id="spanTwo">
+        <a href="">Majors</a>
+    </span>
+    <span id="spanThree">
+        <a href="">Mailing List</a>
+    </span>
+     </div>
+     <div class="planTwo">
+<span id="spanFour">
+        <a href="">Visit Tobzid</a>
+    </span>
+    <span id="spanFive">
+        <a href="">Why Tobzid</a>
+    </span>
+     </div>
+    </div> <!--The Plan Div ends here-->
+</div>   <!--This mini Div Ends here-->
+
+
+<div class="sectTwoDivTwo"> <!--This mini Div starts here-->
+<h1>Graduate & Professional Education</h1>
+<p>Tobzid University's esteemed graduate and professional education programs empower students to apply their inquisitive and innovative thinking, influenced by a Christian worldview, to 
+    address real-world issues in their chosen fields be it academia, corporate leadership, medicine, scientific research, or the arts.</p>
+
+
+    <div class="planDiv"> <!--The Plan Div starts here-->
+        <div class="planThree">
+            <span id="spanSix">
+            <a href="">Graduate School</a>
+        </span>
+        <span id="spanSeven">
+            <a href="">Professional Education</a>
+        </span>
+        <span id="spanEight">
+            <a href="">Business</a>
+        </span>
+        <span id="spanNine">
+            <a href="">Law School</a>
+        </span>
+        </div>
+        <div class="planFour">
+            <span id="spanTen">
+            <a href="">Social Work</a>
+        </span>
+
+        <span id="spanElev">
+            <a href="">Truett Seminary</a>
+        </span>
+        <span id="spanTwelve">
+            <a href="">Virtual Tour</a>
+        </span>
+        </div>
+       </div> <!--The Plan Div ends here-->
+</div> <!--This mini Div Ends here-->
+
+    </div><!--The container in sect two ends here-->
+</section> <!--The second section ends here-->
+
+<section class="thirdSect"> <!--The Third section starts here-->
+    
+<input type="search" placeholder="What can we help you find?" id="search-input">
+
+
+<div class="afterSearchContDiv">
+<div class="gateway">
+    <h1>Gateways for..</h1>
+</div>
+<div class="gatewayTwo">
+
+    <span id="alumniOne">
+    <a href="">Tobzid Alumni</a>
+</span>
+
+<span id="alumniTwo">
+    <a href="">Faculty & Staff</a>
+</span>
+
+<span id="alumniThree">
+    <a href="">Parents</a>
+</span>
+</div>
+<div class="gatewayThree">
+<span id="alumniFour">
+    <a href="">Prospective Faculty & Staff</a>
+</span>
+
+<span id="alumniFive">
+    <a href="">Students</a>
+</span>
+</div>
+</div>
+</section> <!--The Third section ends here-->
+
+<section class="sectFour">   <!--The Fourth section starts here-->
+<div class="newsDivInSectFour"> <!--The class="newsDivInSectFour starts here-->
+
+<h2>NEWS</h2>
+<div class="firstRead"><a href="">READ MORE NEWS</a></div>
+</div> <!--The class="newsDivInSectFour ends here-->
+
+<div class="ReadImages"> <!--The images Div starts here-->
+
+<div class="ReadBox">
+    <img src="images/image4.jpg" alt="">
+    <p>0ct. 12, 2023</p>
+    <h4>Wondermind Prize Winning Author and Presidential Historian to Present the 2023 Annual Lecture</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+
+<div class="ReadBox">
+    <img src="images/image2.jpg" alt="">
+    <p>oct. 12, 2023</p>
+    <h4>Collegate Day of Prayer Broadcast to Originate from Tobzid University</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+<div class="ReadBox">
+    <img src="images/image1.jpg" alt="">
+    <p>oct. 15, 2023.</p>
+    <h4>Tobzid Research Earn 1$ Million Award for Stage 2 of Civic Innovation Challenge</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+
+<div class="ReadBox">
+    <img src="images/image5.jpg" alt="">
+    <p>oct. 15, 2023</p>
+    <h4>Tobzid University Annouces Fall Enrollment</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+
+</div> <!--The images Div ends here-->
+
+
+<div class="ReadImagesTwo"> <!--The second image Div starts here-->
+
+<div class="ReadBox">
+    <img src="images/image8.jpg" alt="">
+    <p>oct. 20, 2023</p>
+    <h4>Tobzid Highlights Research Collaboration as University Celebrates National Research Administrator Day</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+<div class="ReadBox">
+    <img src="images/image7.jpg" alt="">
+    <p>oct. 20, 2023</p>
+    
+    <h4>Tobzid Undergraduate First-Year Experiences, Learning Communities Jump into National Top 10 in Latest U.S. News Rankings
+    </h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+<div class="ReadBox">
+    <img src="images/image6.jpg" alt="">
+    <p>oct. 20, 2023</p>
+    <h4>Tobzid Department of Public Safety Hosts Session for Safety Day to Engage Students on Campus Safety</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+<div class="ReadBox">
+    <img src="images/image9.jpg" alt="">
+    <p>oct. 20, 2023</p>
+    <h4>Tobzid University Moves Up in Rankings of Top 100 U.S. Universities Granted Utility Patents in 2022</h4>
+    <a href="">READ MORE &#62;</a>
+</div>
+</div> <!--The second image Div ends here-->
+</section> <!--The Fourth section ends here-->
+
+<section class="sectFive"> <!--The fifth section starts here-->
+    <div class="newsDivInSectFour"> <!--The class="newsDivInSectFour starts here but in section Five-->
+
+        <h2>Events</h2>
+        <div class="firstRead"><a href="">SEE MORE EVENTS</a></div>
+        </div> <!--The class="newsDivInSectFour ends here but in section Five-->
+        
+<div class="contDivInSectFive"> <!--This contDivInSectFive Div starts here-->
+<div class="ContEventDiv"> <!--MINIDIV in contDivInSectFive starts here-->
+    <div class="EventDiv"> <!--EVents Div starts here-->
+<div class="date">
+    <h4>Oct</h4>
+    <h4>16</h4>
+</div>
+
+<a href="">Readers Meet the Author featuring Greg Garrett, "Bastille Day"</a>
+</div> <!--EVents Div ends here-->
+
+<div class="EventDiv"> <!--EVents Div starts here-->
+<div class="date">
+    <h4>Oct</h4>
+    <h4>18</h4>
+</div>
+
+<p><a href="">Fall Break"</a> (ends Oct 20)</p>
+</div> <!--EVents Div ends here-->
+
+<div class="EventDiv"> <!--EVents Div starts here-->
+<div class="date">
+    <h4>Oct</h4>
+    <h4>22</h4>
+</div>
+
+<a href="">Tobzid 101: Office of the External Affairs</a>
+</div> <!--EVents Div ends here-->
+
+<div class="EventDiv"> <!--EVents Div starts here-->
+<div class="date">
+    <h4>Oct</h4>
+    <h4>22</h4>
+</div>
+
+<a href="">Campus Landscape Master Planning Open House</a>
+</div> <!--EVents Div ends here-->
+</div> <!--MINIDIV in contDivInSectFive ends here-->
+
+
+<div class="ContEventDiv"> <!--MINIDIV in contDivInSectFive starts here-->
+    <div class="EventDiv"> <!--EVents Div starts here-->
+    <div class="date">
+        <h4>Oct</h4>
+        <h4>22</h4>
+    </div>
+    
+    <a href="">Renowned Author Dr. Chanequa Walker-Barnes to Speak at Tobzid</a>
+</div> <!--EVents Div ends here-->
+    
+<div class="EventDiv"> <!--EVents Div starts here-->
+    <div class="date">
+        <h4>Oct</h4>
+        <h4>24</h4>
+    </div>
+    
+    <a href="">Last Thursdays: Praying for The Nation's College-Aged Students"</a>
+</div> <!--EVents Div ends here-->
+
+<div class="EventDiv"> <!--EVents Div starts here-->
+    <div class="date">
+        <h4>Oct</h4>
+        <h4>26</h4>
+    </div>
+    <p><a href="">Tobzid Symposium on Faith and Culture - Called Together in an Age of Discord</a>
+        (ends Oct 27, 2023)</p>
+    </div> <!--EVents Div ends here-->
+
+    <div class="EventDiv"> <!--EVents Div starts here-->
+    <div class="date">
+        <h4>Oct</h4>
+        <h4>28</h4>
+    </div>
+    
+    <a href="">The 75th Anniversary of Singspiration! - Tobzid Homecoming Worship Service</a>
+</div> <!--EVents Div ends here-->
+    </div> <!--MINIDIV in contDivInSectFive ends here-->
+    
+</div> <!--This contDivInSectFive Div ends here-->
+</section> <!--The fifth section ends here-->
+
+<section class="sectSix"> <!--The sixth containerDiv starts here-->
+    <div class="theDivInSectSix">
+<h2>About Tobzid University</h2>
+
+<p>Tobzid University is a private University and a nationally ranked Research 1 institution. 
+    The University provides a vibrant campus community for more than 20,000 students by blending
+     interdisciplinary research with an international reputation for educational excellence and a faculty commitment to teaching and scholarship.
+     Chartered in 1845 by the Republic of Texas through the efforts of Baptist pioneers, 
+     Tobzid is the oldest continually operating University in Texas. Located in Waco,
+     Tobzid welcomes students from all 50 states and more than 90 countries to study a broad 
+     range of degrees among its 12 nationally recognized academic divisions.</p>
+
+     <div class="firstReadOne"><a href="">LEARN MORE ABOUT TOBZID</a></div>
+</div>
+</section> <!--The sixth containerDiv starts here-->
+
+<section class="sectSeven"> <!--The seventh section starts here-->
+
+<div class="sociaMedia">
+<h1>Follow Us</h1>
+
+<div class="socialMediaImage">
+    <a href=""><img src="images/facebook.jpg" alt=""></a>
+    <a href=""><img src="images/instagram.jpg" alt=""></a>
+    <a href=""><img src="images/twitter.png" alt=""></a>
+    <a href=""><img src="images/linkedIn.png" alt=""></a>
+    <a href=""><img src="images/yout.png" alt=""></a>
+    
+</div>
+
+</div>
+
+</section> <!--The seventh section ends here-->
+
+<footer>
+
+<div class="footerCont"> <!--The footer container Div starts here-->
+<div class="footerDivOne">
+    <div class="logo-Div footerLogo">
+        <h1>ToBZid</h1>
+        </div>
+        
+        <div class="footerWord">
+            <p>Copyright © <a href="">Tobzid® University</a>. All rights reserved <span id="date"></span>.</p>
+            <p>Tobzid University • Abeokuta, Ogun state, Nigeria • +2348165185212</p>
+        </div>
+</div>
+<div class="footersocialMedia">
+    <a href="www.facebook.com"><img src="images/facebook.jpg" alt=""></a>
+    <a href="www.instagram.com"><img src="images/instagram.jpg" alt=""></a>
+    <a href="www.x.com"><img src="images/twitter.png" alt=""></a>
+    <a href="www.linkedin.com"><img src="images/linkedIn.png" alt=""></a>
+    <a href="www.youtube.com"><img src="images/yout.png" alt=""></a>
+    
+</div>
+
+</div> <!--The footer container Div ends here-->
+
+
+</footer>
+
+
+
+</main>
+<script src="index.js"></script>
+</body>
+</html>
