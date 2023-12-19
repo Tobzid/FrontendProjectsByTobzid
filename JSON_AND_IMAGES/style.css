@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, rgb(120, 188, 120), rgb(131, 131, 215), rgb(194, 120, 120)) ;
+    width: 100%;
+}
+
+#root, #rootTwo {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin:30px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.imageCont {
+    width:20% ;
+    padding: 10px;
+}
+
+.imageCont img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.imageCont p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.imageCont h2{
+    font-size: 14px;
+}
+
+.imageCont h1{
+    font-size: 14px;
+}
+
+/* The description styling starts here.*/
+#description{
+    width: 60%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#description h1{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+}
+
+#description p{
+    font-size: 22px;
+    color: crimson;
+    padding-top: 10px;
+}

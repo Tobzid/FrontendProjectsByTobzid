@@ -1,0 +1,94 @@
+[{
+    "id" : "1",
+    "img" : "./images/image2.jpg",
+    "description" : "This is Tobzid's Work",
+    "Price" : 128,
+    "status" : "available",
+    "name": "Mr. Tobid"
+},
+
+{
+    "id" : "2",
+    "img" : "images/image3.jpg",
+    "description" : "This is Lola's Work",
+    "Price" : 10,
+    "status" : "available",
+    "name": "Mrs. Lola"
+},
+
+{
+    "id" : "3",
+    "img" : "./images/image4.jpg",
+    "description" : "This is Jasmine's Work",
+    "Price" : 80,
+    "status" : "available",
+    "name": "Mrs. Jasmine"
+},
+
+{
+    "id" : "4",
+    "img" : "./images/image5.jpg",
+    "description" : "This is Wande's Work",
+    "Price" : 108,
+    "status" : "available",
+    "name": "Mrs. Wande"
+},
+
+{
+    "id" : "5",
+    "img" : "./images/image6.jpg",
+    "description" : "This is Nae's Work",
+    "Price" : 168,
+    "status" : "available",
+    "name": "Mrs. Nae"
+},
+
+
+
+{
+    "id" : "1",
+    "img" : "./images/image2.jpg",
+    "description" : "This is Tobzid's Work",
+    "Price" : 128,
+    "status" : "available",
+    "name": "Mr. Tobid"
+},
+
+{
+    "id" : "2",
+    "img" : "images/image3.jpg",
+    "description" : "This is Lola's Work",
+    "Price" : 10,
+    "status" : "available",
+    "name": "Mrs. Lola"
+},
+
+{
+    "id" : "3",
+    "img" : "./images/image4.jpg",
+    "description" : "This is Jasmine's Work",
+    "Price" : 80,
+    "status" : "available",
+    "name": "Mrs. Jasmine"
+},
+
+{
+    "id" : "4",
+    "img" : "./images/image5.jpg",
+    "description" : "This is Wande's Work",
+    "Price" : 108,
+    "status" : "available",
+    "name": "Mrs. Wande"
+},
+
+{
+    "id" : "5",
+    "img" : "./images/image6.jpg",
+    "description" : "This is Nae's Work",
+    "Price" : 168,
+    "status" : "available",
+    "name": "Mrs. Nae"
+}
+
+
+]
