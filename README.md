@@ -10,4 +10,4 @@
 9. Stop Watch
 10. Javascript Quotes Generator
 11. Displaying or sliding images with just HTML AND JAVASCRIPT
-
+12. JSON FILE and calling images from it as data (JSON AND IMAGES)
